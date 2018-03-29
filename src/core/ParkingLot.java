@@ -97,8 +97,8 @@ public class ParkingLot {
         for (Integer slot : mSlots.keySet()) {
 
             Car next = mSlots.get(slot);
-            stringBuilder.append(slot)
-                    .append(next.toString());
+            stringBuilder.append(slot).append("\t")
+                    .append(next.toString()).append("\n");
         }
 
         return stringBuilder.toString();
